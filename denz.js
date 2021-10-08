@@ -276,7 +276,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumberr = ["6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
+		const ownerNumberr = ["6282158549899@s.whatsapp.net","6282158549899@s.whatsapp.net","6282158549899@s.whatsapp.net","6282158549899@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
 		const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
@@ -304,11 +304,11 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Helga Ilham_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_©Akira_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Kw69Oel34Nd0JuluvFNVKt', "groupName": `${NamaBot}`, "footerText": "*_© Helga Ilham_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Kw69Oel34Nd0JuluvFNVKt', "groupName": `${NamaBot}`, "footerText": "*_©Akira_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -446,7 +446,7 @@ const fvid = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6282158549899-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -479,7 +479,7 @@ const finv = {
 const fstick = {
 "key": {
 	  "participant": `0@s.whatsapp.net`,
-      "remoteJid": "6289643739077-1613049930@g.us",
+      "remoteJid": "6282158549899-1613049930@g.us",
       "fromMe": false,
       "id": "3B64558B07848BD81108C1D14712018E"
     },
@@ -504,7 +504,7 @@ const fgi = {
 	 key: { 
          fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6282158549899-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -522,7 +522,7 @@ const ftex = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6282158549899-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -537,7 +537,7 @@ const fvoc = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6282158549899-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -609,7 +609,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Helga Ilham_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_©Akira_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -622,7 +622,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Helga Ilham_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_©Akira_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -948,7 +948,7 @@ denz.updatePresence(from, Presence.recording)
         switch (command) {
         case 'menu':
         case 'help':
-        ptod = "6282138919347@s.whatsapp.net"
+        ptod = "6282158549899@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -975,7 +975,7 @@ TIME-INFO
 sendButLocation(from, `${menu}`, `${uwu}H E L G A 右${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🌹'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break
 case 'allmenu':
-        ptod = "6282138919347@s.whatsapp.net"
+        ptod = "6282158549899@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -1257,7 +1257,7 @@ break
 case 'command':
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Helga Ilham_*',
+ footerText: '*_©Akira_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
