@@ -954,25 +954,25 @@ denz.updatePresence(from, Presence.recording)
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `*Halo ${pushname}*
-*Kalo buttonnya gak ada*
-*ketik #allmenu*
+       menu = `*_Halo ${pushname}_*
+*_Kalo buttonnya gak ada_*
+*_ketik #allmenu_*
 
-BOT-INFO
+*BOT-INFO*
 - Owner : @${otod.split('@')[0]}
 - Battery : ${baterai.battery}
 - Mode : ${publik ? 'Public' : 'Self'}
 - Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
 - Total Hit : ${cmhit.length}
 
-TIME-INFO
+*TIME-INFO*
 - ${tampilUcapan} ${pushname}
 - Wib : ${timeWib}
 - Wita : ${timeWita}
 - Wit : ${timeWit}  
 - Hari : ${week} ${weton}
 - Tanggal : ${calender}`
-sendButLocation(from, `${menu}`, `${uwu}H E L G A 右${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🌹'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, `${uwu}A K I R A 右${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🌹'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break
 case 'allmenu':
         ptod = "6282158549899@s.whatsapp.net"
@@ -984,7 +984,7 @@ case 'allmenu':
 menu = `${uwu}
 ╭─❒ 「 Bot Info 」 ❒
 │◦➛Creator : @${dtod.split('@')[0]}
-│◦➛Recode : @${ptod.split('@')[0]}
+│◦➛Real Name: M.Reihan Saputra
 │◦➛Battery : ${baterai.battery}
 │◦➛Mode : ${publik ? 'Public' : 'Self'}
 │◦➛Total Hit : ${cmhit.length}
@@ -1139,6 +1139,9 @@ menu = `${uwu}
 │◦➛${prefix}glow 「 text 」
 │◦➛${prefix}summer 「 text 」
 │◦➛${prefix}flower 「 text 」
+│◦➛${prefix}steel 「 text 」
+│◦➛${prefix}grafiti 「 text 」
+│◦➛${prefix}planebanner 「 text 」
 │◦➛${prefix}burn 「 text 」
 │◦➛${prefix}quote 「 text 」
 │◦➛${prefix}wooden 「 text 」
@@ -1450,6 +1453,9 @@ menu = `❏ 「 \`\`\`MENU MAKER\`\`\` 」
 │◦➛${prefix}glow 「 text 」
 │◦➛${prefix}summer 「 text 」
 │◦➛${prefix}flower 「 text 」
+│◦➛${prefix}steel 「 text 」
+│◦➛${prefix}grafiti 「 text 」
+│◦➛${prefix}planebanner「 text 」
 │◦➛${prefix}burn 「 text 」
 │◦➛${prefix}quote 「 text 」
 │◦➛${prefix}wooden 「 text 」
@@ -1807,7 +1813,7 @@ denz.sendMessage(from, vid, video, {quoted: mek})
 break
 //Xchillds
 case 'maker2d2': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker2?text=${makell}&apikey=${xchillds}`)
@@ -1815,7 +1821,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 		case 'maker2d3': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3?text=${makell}&apikey=${xchillds}`)
@@ -1823,7 +1829,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 		case 'maker2d4': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker4?text=${makell}&apikey=${xchillds}`)
@@ -1831,7 +1837,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = body.slice(8)
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d?text=${makell}&apikey=${xchillds}`)
@@ -1839,7 +1845,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d2': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no2?text=${makell}&apikey=${xchillds}`)
@@ -1847,7 +1853,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d3': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no3?text=${makell}&apikey=${xchillds}`)
@@ -1855,7 +1861,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d4': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no4?text=${makell}&apikey=${xchillds}`)
@@ -1863,7 +1869,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'transformer': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker/special/transformer?text=${makell}&apikey=${xchillds}`)
@@ -1892,7 +1898,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'coffeecup': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup&apikey=${xchillds}`)
@@ -1900,7 +1906,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'coffeecup2': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup2&apikey=${xchillds}`)
@@ -1908,7 +1914,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'neon': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=neon&apikey=${xchillds}`)
@@ -1916,7 +1922,7 @@ case 'maker2d2':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 case 'glow': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=glow&apikey=${xchillds}`)
@@ -1924,7 +1930,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'summer': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/alam?text=${makell}&theme=summer&apikey=${xchillds}`)
@@ -1932,7 +1938,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'flower': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/alam?text=${makell}&theme=flower&apikey=${xchillds}`)
@@ -1940,7 +1946,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'burn': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/random?text=${makell}&theme=text-burn&apikey=${xchillds}`)
@@ -1948,7 +1954,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'quote': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/random?text=${makell}&theme=art-quote&apikey=${xchillds}`)
@@ -1956,7 +1962,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'wooden': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/roses?text=${makell}&theme=wooden-boarch&apikey=${xchillds}`)
@@ -1964,7 +1970,7 @@ case 'glow':
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'golden': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} HELGA`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Akira`)
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/roses?text=${makell}&theme=golden&apikey=${xchillds}`)
@@ -1974,15 +1980,15 @@ case 'glow':
 //Done
 case 'jadibot':
 if(from.endsWith('@g.us')) return reply('Only With Private Chat/PC')
-client.version = [2, 2119, 6]
-client.browserDescription = ['Dcode Denpa','Desktop','3.0']
+denz.version = [2, 2119, 6]
+denz.browserDescription = ['Akira','Desktop','3.0']
 if (args[0] && args[0].length > 200) {
 	let json = Buffer.from(args[0], 'base64').toString('utf-8')
     let obj = JSON.parse(json)
-    await client.loadAuthInfo(obj)
+    await denz.loadAuthInfo(obj)
 }
 try {
-client.on('qr' ,async qr => {
+denz.on('qr' ,async qr => {
 qrbot = await qrkode.toDataURL(qr, { scale: 8 })
 buffqr = await Buffer.from(qrbot.split('data:image/png;base64,')[1], 'base64')
 await fs.writeFileSync(`./jadibot@${sender}.jpg`, buffqr)
@@ -1991,17 +1997,17 @@ setTimeout(() => {
        denz.deleteMessage(from, scen.key)
   }, 30000);
 })  
-client.on ('open', async () => {
+denz.on ('open', async () => {
   console.log ('credentials update')
-  const authInfo = client.base64EncodedAuthInfo()
+  const authInfo = denz.base64EncodedAuthInfo()
   fs.writeFileSync(`./sampah/${sender}.json`, JSON.stringify(authInfo  ,null, '\t'))
-  await client.sendMessage('0@s.whatsapp.net', `Kamu bisa login tanpa qr dengan pesan dibawah ini`, MessageType.extendedText)
-  client.sendMessage('0@s.whatsapp.net', `${prefix}${command} ${Buffer.from(JSON.stringify(authInfo)).toString('base64')}`, MessageType.extendedText)
+  await denz.sendMessage('0@s.whatsapp.net', `Kamu bisa login tanpa qr dengan pesan dibawah ini`, MessageType.extendedText)
+  denz.sendMessage('0@s.whatsapp.net', `${prefix}${command} ${Buffer.from(JSON.stringify(authInfo)).toString('base64')}`, MessageType.extendedText)
 })
-client.on('chat-update', async (chat) => {
+denz.on('chat-update', async (chat) => {
 	require('./denz.js')(client, chat)
 })    
-await client.connect().then(async ({user}) => {
+await denz.connect().then(async ({user}) => {
 reply('Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2))
 })
 } catch {
@@ -2013,10 +2019,10 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 try {
 reply('Oke')
 fs.unlinkSync(`./sampah/${sender}.json`)
-client.close()
+denz.close()
 } catch {
 reply('Oke')
-client.close()
+denz.close()
 }
 break
 case 'culik':
@@ -2037,7 +2043,7 @@ for (let i of ownerNumberr) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Dcode Denpa;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Akira;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -2659,6 +2665,18 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
    if (!arg) return reply(from, `Penggunaan ${prefix}codetxt teks`, mek)
    sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/maker/carbon?code=${arg}&apikey=${HunterApi}`)
    break
+   case 'steel':
+   if (!arg) return reply(from, `Penggunaan ${prefix}codetxt teks`, mek)
+   sendMediaURL(from, `https://dapuhy-api.herokuapp.com/api/textpro/steel?text=${arg}&apikey=Kontolodon`)
+   break
+   case 'grafiti':
+   if (!arg) return reply(from, `Penggunaan ${prefix}codetxt teks`, mek)
+   sendMediaURL(from, `https://dapuhy-api.herokuapp.com/api/ephoto/grafiti?text=${arg}&apikey=Kontolodon`)
+   break
+   case 'planebanner':
+   if (!arg) return reply(from, `Penggunaan ${prefix}codetxt teks`, mek)
+   sendMediaURL(from, `https://dapuhy-api.herokuapp.com/api/photofunia/planebanner?text=${arg}&apikey=Kontolodon`)
+   break
 case 'matrix':
 				if (!arg) return reply(from, `Penggunaan ${prefix}matrix teks`, mek)
 				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/matrix?text=${arg}&apikey=${HunterApi}`)
@@ -2691,11 +2709,129 @@ case 'matrix':
 				if (!arg) return reply(from, `Penggunaan ${prefix}warrior teks`, mek)
 				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/warrior?text=${arg}&apikey=${HunterApi}`)
 				break
-				case 'd':
 				case 'del':
 				case 'delete':
 					denz.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
+					case 'hartatahta':
+					if (!arg) return reply(`「❗」Contoh : ${prefix}hartatahta botwea`)
+har = body.slice(12)
+buffer = await getBuffer(`https://dapuhy-api.herokuapp.com/api/maker/hartatahta?text=${har}&apikey=Kontolodon` )
+reply('「❗」Harta Tahta Gabut:v')
+denz.sendMessage(from, buffer, image, {quoted: mek})
+break
+case 'wanted':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/wanted/?urlgbr=${anu.display_url}&text1=Dicari&text2=${tels}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'gtav':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/gtavposter/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'facebookpage':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(14)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/facebookprof/?urlgbr=${anu.display_url}&text=${tels}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'costumwp':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(14)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/customwp/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'pantaimalam':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(14)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/nightbeach/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'pencil':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(14)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/pencil/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'bakar':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/burneffect/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
+	case 'crossgun':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('Mohon Tunggu...')
+	  owgi = await denz.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/crossgun/?urlgbr=${anu.display_url}`)
+	 denz.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('Jangan tambah kan apapun pada command')
+	}
+	break
 				case 'colong':
 		if (!isQuotedSticker) return reply(`Reply sticker dengan caption *${prefix}colong*`)
 		const encmediia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2754,6 +2890,79 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						denz.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', duration: cokmatane, ptt: true, quoted:mek})
 						fs.unlinkSync(mediam)
 				break
+				case 'anime':
+                    if (args.length == 0) return reply(`Contoh: ${prefix + command} Charlotte`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://dapuhy-api.herokuapp.com/api/anime/mal-name?name=${query}&apikey=Kontolodon`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Title : ${get_result.title}\n`
+                    ini_txt += `English : ${get_result.english}\n`
+                    ini_txt += `Link : ${get_result.detailsLink}\n`
+                    ini_txt += `Episodes : ${get_result.episodes}\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Type : ${get_result.type}\n`
+                    ini_txt += `Aired : ${get_result.aired}\n`
+                    ini_txt += `Classification : ${get_result.classification}\n`
+                    ini_txt += `Genre : ${get_result.genres}\n`
+                    ini_txt += `Synonyms : ${get_result.synopsis}\n`
+                    ini_txt += `Favorites : ${get_result.favorites}%\n`
+                    ini_txt += `Characters : \n`
+                    ini_character = get_result.characters
+                    for (var x of ini_character) {
+                        ini_txt += `- ${x.name.full} (${x.name.native})\n`
+                    }
+                    ini_txt += `\nDescription : ${get_result.description}`
+                    thumbnail = await getBuffer(get_result.coverImage.large)
+                    denz.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+                    case 'characteranime':
+                    if (args.length == 0) return reply(`Contoh: ${prefix + command} Miku Nakano`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/character?apikey=95c72a6fec56cc8cc65b4b05&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Name : ${get_result.name.full}\n`
+                    ini_txt += `Native : ${get_result.name.native}\n`
+                    ini_txt += `Favorites : ${get_result.favourites}\n`
+                    ini_txt += `Media : \n`
+                    ini_media = get_result.media.nodes
+                    for (var x of ini_media) {
+                        ini_txt += `- ${x.title.romaji} (${x.title.native})\n`
+                    }
+                    ini_txt += `\nDescription : \n${get_result.description.replace(/__/g, "_")}`
+                    thumbnail = await getBuffer(get_result.detailsLink)
+                    denz.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+                case 'manga':
+                    if (args.length == 0) return reply(`Contoh: ${prefix + command} Gotoubun No Hanayome`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/manga?apikey=95c72a6fec56cc8cc65b4b05&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Id MAL : ${get_result.idMal}\n`
+                    ini_txt += `Title : ${get_result.title.romaji}\n`
+                    ini_txt += `English : ${get_result.title.english}\n`
+                    ini_txt += `Native : ${get_result.title.native}\n`
+                    ini_txt += `Format : ${get_result.format}\n`
+                    ini_txt += `Chapters : ${get_result.chapters}\n`
+                    ini_txt += `Volume : ${get_result.volumes}\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Source : ${get_result.source}\n`
+                    ini_txt += `Start Date : ${get_result.startDate.day} - ${get_result.startDate.month} - ${get_result.startDate.year}\n`
+                    ini_txt += `End Date : ${get_result.endDate.day} - ${get_result.endDate.month} - ${get_result.endDate.year}\n`
+                    ini_txt += `Genre : ${get_result.genres.join(", ")}\n`
+                    ini_txt += `Synonyms : ${get_result.synonyms.join(", ")}\n`
+                    ini_txt += `Score : ${get_result.averageScore}%\n`
+                    ini_txt += `Characters : \n`
+                    ini_character = get_result.characters.nodes
+                    for (var x of ini_character) {
+                        ini_txt += `- ${x.name.full} (${x.name.native})\n`
+                    }
+                    ini_txt += `\nDescription : ${get_result.description}`
+                    thumbnail = await getBuffer(get_result.coverImage.large)
+                    denz.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
 				case 'detikvideo':
 				encmedian = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					median = await denz.downloadAndSaveMediaMessage(encmedian)
@@ -3641,12 +3850,12 @@ function _0x4ee9(_0x1253de,_0x4df4d5){var _0x587b3c=_0x587b();return _0x4ee9=fun
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/3hrZZ6s/tsukasa.png",
                 "thumbnail": fs.readFileSync(`./denz.jpg`),
-                "sourceUrl": "https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw"}}})
+                "sourceUrl": "https://m.youtube.com/channel/UCvVd-kAsrJUjg0bwKqxUPeg"}}})
                 break
         case 'bugbutton':
         if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
         denz.toggleDisappearingMessages(from, 0)
-        sendButLocation(from, `${ngazap(prefix)}`, `${virtag(prefix)}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}bbaij72njnwjibdo16830nslm1782`,buttonText:{displayText:'HELGA🌹'},type:1}])
+        sendButLocation(from, `${ngazap(prefix)}`, `${virtag(prefix)}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}bbaij72njnwjibdo16830nslm1782`,buttonText:{displayText:'Akira'},type:1}])
         denz.toggleDisappearingMessages(from, 0)
 break
 case 'bugrow':
@@ -4452,7 +4661,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Akira Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCvVd-kAsrJUjg0bwKqxUPeg"}}})
 	}
     }
     }
