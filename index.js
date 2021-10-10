@@ -7,7 +7,6 @@ const moment = require("moment-timezone")
 const fs = require("fs")
 const util = require('util')
 const figlet = require('figlet')
-const term = require('terminal-kit').terminal
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const fetch = require('node-fetch')
 const { color, bgcolor } = require('./lib/color')
