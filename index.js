@@ -23,7 +23,7 @@ async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
     denz.version = [2, 2119, 6]
     denz.logger.level = 'warn'
-    denz.browserDescription = ['Akita Bot','Desktop','3.0']
+    denz.browserDescription = ['Akira Bot','Desktop','3.0']
     await sleep(10000)
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
@@ -189,49 +189,6 @@ denz.sendMessage(m.key.remoteJid, `▷\`\`\`Anti Delete\`\`\`
 }
 
 console.clear()
-var progressBar , progress = 0 ;
-function doProgress()
-{
-	progress += Math.random() / 10 ;
-	progressBar.update( progress ) ;
-	
-	if ( progress >= 1 )
-	{
-		setTimeout( function() { console.clear(),
-		exec(`screenfetch -A Deepin`, (error, stdout, stderr) => {
-			console.log(stdout), console.log(bgcolor('https://github.com/dcode-denpa/bitch-boot', 'cyan'))})}, 200 ) ;
-	}
-	else
-	{
-		setTimeout( doProgress , 100 + Math.random() * 400 ) ;
-	}
-}
-console.log(color(figlet.textSync(`${settings.NamaBot}`, {
-		font: 'Standard',
-		horizontalLayout: 'default',
-		vertivalLayout: 'default',
-		width: 80,
-		whitespaceBreak: true
-	    }), 'lightgreen')), term.slowTyping('Created By Akira' ,{ flashStyle: term.brightWhite })
-progressBar = term.progressBar( {
-	width: 80 ,
-	title: '\n\nLoading' ,
-	eta: true ,
-	percent: true
-} ) ;
-doProgress() ;
-
-/**
- * Uncache if there is file change
- * @param {string} module Module name or path
- * @param {function} cb <optional> 
- */
-function nocache(module, cb = () => { }) {
-    fs.watchFile(require.resolve(module), async () => {
-        await uncache(require.resolve(module))
-        cb(module)
-    })
-}
 /**
  * Uncache a module
  * @param {string} module Module name or path
